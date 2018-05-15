@@ -41,7 +41,7 @@
             if (!dataType[$(this).attr('data-rule')].test(val)) {
                 ret = false;
                 var msg = $(this).attr('data-msg') || $(this).attr('placeholder')
-                callback && callback($(this).attr('data-msg'));
+                callback && callback(msg);
                 return false;
             }
         });
